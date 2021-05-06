@@ -1,5 +1,6 @@
 import type { AppProps /*, AppContext */ } from "next/app";
 import Head from "next/head";
+import Layout from "../components/layout/index";
 import "tailwindcss/tailwind.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -12,7 +13,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <Component {...pageProps} />
+      <Layout {...pageProps}>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
