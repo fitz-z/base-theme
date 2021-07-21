@@ -2,20 +2,32 @@ import Link from "next/link";
 
 const Footer = (props) => {
   return (
-    <div className="w-full flex justify-center items-center bg-primary p-5">
-      <div className="max-w-screen-lg w-full justify-between items-center flex text-white">
-        <div>
+    <div className="w-full flex justify-center items-center bg-white p-5">
+      <div className="max-w-screen-lg w-full justify-between items-center flex text-primary">
+        <div className="flex">
           <Link href="/">
-            <a className="mx-12 text-xs block">Home</a>
+            <a className="mx-12  font-bold text-base block">Home</a>
+          </Link>
+          <div>
+            <Link href="/">
+              <a className="mx-12 font-bold text-base block">About</a>
+            </Link>
+            <Link href="/">
+              <a className="mx-12 font-bold text-gray-500 text-sm block">
+                Mission
+              </a>
+            </Link>
+            <Link href="/">
+              <a className="mx-12 font-bold text-gray-500 text-sm block">
+                Team
+              </a>
+            </Link>
+          </div>
+          <Link href="/">
+            <a className="mx-12 text-sm font-bold block">Contact</a>
           </Link>
           <Link href="/">
-            <a className="mx-12 text-xs block">About</a>
-          </Link>
-          <Link href="/">
-            <a className="mx-12 text-xs block">Contact</a>
-          </Link>
-          <Link href="/">
-            <a className="mx-12 text-xs block">Work</a>
+            <a className="mx-12 text-sm  font-bold block">Work</a>
           </Link>
         </div>
         <div>
