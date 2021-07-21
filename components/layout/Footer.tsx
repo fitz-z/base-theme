@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Footer = (props) => {
   return (
-    <div className="w-full flex justify-center items-center bg-background-1 p-5">
-      <div className="max-w-screen-lg w-full justify-between items-center flex text-gray-600">
+    <div className="w-full flex justify-center items-center bg-primary p-5">
+      <div className="max-w-screen-lg w-full justify-between items-center flex text-white">
         <div>
           <Link href="/">
             <a className="mx-12 text-xs block">Home</a>

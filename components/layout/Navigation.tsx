@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Navigation = (props) => {
   return (
-    <div className="w-full flex justify-center items-center bg-background-1 p-5">
-      <div className="max-w-screen-lg w-full justify-between items-center flex text-gray-600">
+    <div className="w-full flex justify-center items-center bg-primary p-5">
+      <div className="max-w-screen-lg w-full justify-between items-center flex text-white">
         <div>
           <Link href="/">
             <a className="mx-3 font-bold text-lg">Home</a>
@@ -20,10 +20,10 @@ const Navigation = (props) => {
         </div>
         <div>
           <Link href="/">
-            <a className="mx-3 text-lg text-primary-1 font-bold">Register</a>
+            <a className="mx-3 text-lg text-white font-bold">Register</a>
           </Link>
           <Link href="/">
-            <a className="mx-3 text-lg text-primary-2 font-bold">Sign In</a>
+            <a className="mx-3 text-lg text-white font-bold">Sign In</a>
           </Link>
         </div>
       </div>
